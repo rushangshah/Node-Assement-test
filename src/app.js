@@ -25,7 +25,7 @@ mongoose.connect(DB_URL, { useNewUrlParser: true }, (err) => {
 //error handling
 app.use((err, req, res, next) => {
   console.log(err);
-  res.status(500).send(`Something went wrong! ${err.message}`);
+  res.status(500).send(`Something went wrong ! ${err.message}`);
 })
 
 // start app on port
